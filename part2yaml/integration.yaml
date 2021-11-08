@@ -8,7 +8,7 @@ spec:
       containers: 
       - name: dbmigration
         image: nyuappsec/assign3:v0
-        command: ['python3', 'manage.py', 'migrate', '--fake']
+        command: ['python3', 'manage.py', 'migrate']
         #command: ["shellscript.sh"]
         env:
             - name: MYSQL_ROOT_PASSWORD
